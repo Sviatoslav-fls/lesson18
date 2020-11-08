@@ -1,0 +1,562 @@
+@charset "UTF-8";
+
+/* Обнуляющий стиль */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ol li,
+ul li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+  line-height: 1;
+  font-family: "Gotham-Book";
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* -------------- */
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* -------------- */
+
+.page {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.world {
+  position: relative;
+  width: 500%;
+}
+
+._no-webp .sky{
+  background: url("../img/sky.png") 0 80% repeat; }
+
+.sky {
+  width: 1500%;
+  height: 100vh;
+  -webkit-animation: sky 90s linear 2s infinite;
+          animation: sky 90s linear 2s infinite;
+}
+
+@-webkit-keyframes sky {
+  100% {
+    -webkit-transform: translateX(-400px);
+            transform: translateX(-400px);
+  }
+}
+
+@keyframes sky {
+  100% {
+    -webkit-transform: translateX(-400px);
+            transform: translateX(-400px);
+  }
+}
+
+.saturn {
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  z-index: 2;
+  height: 2.2%;
+  width: 2.2%;
+  -webkit-animation: saturn 170s linear 2s infinite;
+          animation: saturn 170s linear 2s infinite;
+}
+
+.saturn img {
+  max-width: 100%;
+}
+
+@-webkit-keyframes saturn {
+  100% {
+    -webkit-transform: translateX(-400px);
+            transform: translateX(-400px);
+  }
+}
+
+@keyframes saturn {
+  100% {
+    -webkit-transform: translateX(-400px);
+            transform: translateX(-400px);
+  }
+}
+
+._no-webp .mountain{
+  background: url("../img/mntn22.png") 0 0 repeat-x; }
+
+.mountain {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  -webkit-animation: mountains 70s linear 2s infinite;
+          animation: mountains 70s linear 2s infinite;
+}
+
+@-webkit-keyframes mountains {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+
+  4% {
+    -webkit-transform: translateX(-90px);
+            transform: translateX(-90px);
+  }
+
+  7% {
+    -webkit-transform: translateX(-92px);
+            transform: translateX(-92px);
+  }
+
+  100% {
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+  }
+}
+
+@keyframes mountains {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+
+  4% {
+    -webkit-transform: translateX(-90px);
+            transform: translateX(-90px);
+  }
+
+  7% {
+    -webkit-transform: translateX(-92px);
+            transform: translateX(-92px);
+  }
+
+  100% {
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+  }
+}
+
+._no-webp .city{
+  background: url("../img/city.png") 0 0 repeat-x; }
+
+.city {
+  position: absolute;
+  bottom: -25%;
+  left: 0;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  -webkit-animation: city 35s linear 2s infinite;
+          animation: city 35s linear 2s infinite;
+}
+
+@-webkit-keyframes city {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+
+  10% {
+    -webkit-transform: translateX(-350px);
+            transform: translateX(-350px);
+  }
+
+  12% {
+    -webkit-transform: translateX(-350px);
+            transform: translateX(-350px);
+  }
+
+  14% {
+    -webkit-transform: translateX(-350px);
+            transform: translateX(-350px);
+  }
+
+  52% {
+    -webkit-transform: translateX(-1200px);
+            transform: translateX(-1200px);
+  }
+
+  100% {
+    -webkit-transform: translateX(-2400px);
+            transform: translateX(-2400px);
+  }
+}
+
+@keyframes city {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+
+  10% {
+    -webkit-transform: translateX(-350px);
+            transform: translateX(-350px);
+  }
+
+  12% {
+    -webkit-transform: translateX(-350px);
+            transform: translateX(-350px);
+  }
+
+  14% {
+    -webkit-transform: translateX(-350px);
+            transform: translateX(-350px);
+  }
+
+  52% {
+    -webkit-transform: translateX(-1200px);
+            transform: translateX(-1200px);
+  }
+
+  100% {
+    -webkit-transform: translateX(-2400px);
+            transform: translateX(-2400px);
+  }
+}
+
+.road {
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+  left: -10%;
+  position: absolute;
+  z-index: 7;
+  background-color: #525252;
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(500px) rotatex(30deg);
+          transform: perspective(500px) rotatex(30deg);
+}
+
+.road:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(70%, #fff), color-stop(70%, #525252), to(#525252));
+  background: -o-linear-gradient(left, #fff 0%, #fff 70%, #525252 70%, #525252 100%);
+  background: linear-gradient(90deg, #fff 0%, #fff 70%, #525252 70%, #525252 100%);
+  background-size: 120px;
+  -webkit-animation: road 0.5s linear 2s 6, roadgo 0.5s linear 7s infinite;
+          animation: road 0.5s linear 2s 6, roadgo 0.5s linear 7s infinite;
+}
+
+.road span:before {
+  content: "";
+  position: absolute;
+  bottom: 3%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #df8731;
+}
+
+.road span:after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #df8731;
+}
+
+@-webkit-keyframes road {
+  0% {
+    background-position: 0px;
+  }
+
+  100% {
+    background-position: -120px;
+  }
+}
+
+@keyframes road {
+  0% {
+    background-position: 0px;
+  }
+
+  100% {
+    background-position: -120px;
+  }
+}
+
+@-webkit-keyframes roadgo {
+  0% {
+    background-position: 0px;
+  }
+
+  100% {
+    background-position: -120px;
+  }
+}
+
+@keyframes roadgo {
+  0% {
+    background-position: 0px;
+  }
+
+  100% {
+    background-position: -120px;
+  }
+}
+
+.car {
+  position: absolute;
+  left: -6%;
+  bottom: 80px;
+  z-index: 15;
+  -webkit-animation: drive 10s linear 2s forwards;
+          animation: drive 10s linear 2s forwards;
+}
+
+.car img {
+  max-width: 500px;
+}
+
+._no-webp .car:before{
+  background: url("../img/tesla_wheel.png") 0 0/70px; }
+
+.car:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 68px;
+  bottom: 5px;
+  z-index: 17;
+  height: 70px;
+  width: 70px;
+  -webkit-animation: wheel 1s linear 1s 4, wheelgo 0.8s linear 7s infinite;
+          animation: wheel 1s linear 1s 4, wheelgo 0.8s linear 7s infinite;
+}
+
+._no-webp .car:after{
+  background: url("../img/tesla_wheel.png") 0 0/70px; }
+
+.car:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 50px;
+  bottom: 5px;
+  z-index: 17;
+  height: 70px;
+  width: 70px;
+  -webkit-animation: wheel 1s linear 1s 4, wheelgo 0.8s linear 7s infinite;
+          animation: wheel 1s linear 1s 4, wheelgo 0.8s linear 7s infinite;
+}
+
+.car span:after {
+  content: "";
+  position: absolute;
+  bottom: 12%;
+  left: 93%;
+  z-index: 50;
+  border-top: 50px solid transparent;
+  border-right: 900px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 50px solid transparent;
+  -webkit-animation: fara 0.1s linear 6s 3, fara2 0.1s linear 6.5s 3, fara3 0.3s linear 7s forwards;
+          animation: fara 0.1s linear 6s 3, fara2 0.1s linear 6.5s 3, fara3 0.3s linear 7s forwards;
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: rotate(4deg);
+      -ms-transform: rotate(4deg);
+          transform: rotate(4deg);
+  visibility: hidden;
+}
+
+@-webkit-keyframes fara {
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes fara {
+  100% {
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes fara2 {
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes fara2 {
+  100% {
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes fara3 {
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes fara3 {
+  100% {
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes wheel {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes wheel {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes wheelgo {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes wheelgo {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes drive {
+  0% {
+    left: -6%;
+  }
+
+  35% {
+    left: 4%;
+  }
+
+  50% {
+    left: 4%;
+  }
+
+  100% {
+    left: 10%;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+
+@keyframes drive {
+  0% {
+    left: -6%;
+  }
+
+  35% {
+    left: 4%;
+  }
+
+  50% {
+    left: 4%;
+  }
+
+  100% {
+    left: 10%;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+
+._webp .sky{ background: url(../img/sky.webp) 0 80% repeat; }
+
+._webp .mountain{ background: url(../img/mntn22.webp) 0 0 repeat-x; }
+
+._webp .city{ background: url(../img/city.webp) 0 0 repeat-x; }
+
+._webp .car:before{ background: url(../img/tesla_wheel.webp) 0 0/70px; }
+
+._webp .car:after{ background: url(../img/tesla_wheel.webp) 0 0/70px; }
